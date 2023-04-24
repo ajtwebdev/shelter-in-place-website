@@ -13,6 +13,7 @@ import {
   ButtonInline,
 } from "../components/buttons"
 import ServiceForm from "../components/forms/serviceForm"
+import { StaticImage } from "gatsby-plugin-image"
 
 const BlogArticle = styled.article`
   h1,
@@ -108,6 +109,7 @@ const Navigation = styled.div`
   box-shadow: var(--shadow-light);
   border-radius: var(--br);
   padding: 2em;
+  text-align: center;
 
   ul {
     list-style-type: none;
@@ -160,7 +162,7 @@ const NewsTemplate = pageProps => {
                 <div className="">
                   <h1 className="title">{data.title}</h1>
                 </div>
-                <ButtonPrimary to="/contact">get free estimate</ButtonPrimary>
+                <ButtonPrimary to="/contact">become a christian</ButtonPrimary>
               </BannerText>
             </Container>
           </BannerWrapper>
@@ -178,9 +180,30 @@ const NewsTemplate = pageProps => {
             <Aside className="spacing">
               <Navigation className="spacing">
                 <h3 className="caps accent title bold">
-                  Recent <br /> Posts
+                  The <br /> Author
                 </h3>
-                <div></div>
+                <StaticImage
+                  src="../images/brian-pickup.jpg"
+                  alt="brian pickup"
+                />
+                <p className="subheader">Brian Pickup</p>
+                <p>
+                  Christendom has been under attack since its inception.
+                  Gnosticism was already shifting the pillars of the gospel even
+                  before the apostles had died. Throughout its history, many
+                  groups, especially the Catholic Church and “Christian” mystics
+                  have attempted to steer honest seekers and believers away from
+                  the Truth with pagan beliefs and rituals. But now there is a
+                  turning away from God that is unprecedented. There has always
+                  been a drought of knowledge of the Holy Word. This, coupled
+                  modern society who has largely allowed themselves to be
+                  pacified by the lying devil-inspired mainstream media and five
+                  minute video clips on U-tube, Twitter etc. to learn about the
+                  world in which we live. Many people have been blinded this
+                  phenomenon until they no longer have the patience or the
+                  attention span to read the printed word let alone read a book
+                  of any kind.
+                </p>
               </Navigation>
               <div className="service-form">
                 <ServiceForm />

@@ -6,7 +6,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
-import { ButtonPrimary } from "../components/buttons"
+import { ButtonPrimary, ButtonInline } from "../components/buttons"
 import { Container, GridTwo, Section } from "../components/layoutComponents"
 
 const device = {
@@ -18,6 +18,9 @@ const Article = styled.article`
   border-raidus: var(--br);
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
   img {
     /* width: 100%; */
   }
@@ -158,44 +161,42 @@ const BlogIndex = ({
               const title = post.title
 
               return (
-                <GridTwo>
-                  <li key={post.uri}>
-                    <Article
-                      className="post-list-item"
-                      itemScope
-                      itemType="http://schema.org/Article"
-                    >
-                      {post.featuredImage ? (
-                        <StyledImg
-                          className="stretch"
-                          image={
-                            post.featuredImage.node.localFile.childImageSharp
-                              .gatsbyImageData
-                          }
-                          alt="Christianity Blog"
-                        />
-                      ) : null}
+                <li key={post.uri}>
+                  <Article
+                    className="post-list-item"
+                    itemScope
+                    itemType="http://schema.org/Article"
+                  >
+                    {post.featuredImage ? (
+                      <StyledImg
+                        className="stretch"
+                        image={
+                          post.featuredImage.node.localFile.childImageSharp
+                            .gatsbyImageData
+                        }
+                        alt="Christianity Blog"
+                      />
+                    ) : null}
 
-                      <Text>
-                        <header>
-                          <h2 className="subheader upper">
-                            <Link
-                              className="spacing accent"
-                              to={post.uri}
-                              itemProp="url"
-                            >
-                              <span itemProp="title">{parse(title)}</span>
-                            </Link>
-                          </h2>
-                          <small>{post.date}</small>
-                        </header>
-                        {/* <section itemProp="description">
-                          {parse(post.excerpt)}
-                        </section> */}
-                      </Text>
-                    </Article>
-                  </li>
-                </GridTwo>
+                    <Text>
+                      <header>
+                        <h2 className="subheader upper">
+                          <Link
+                            className="spacing accent"
+                            to={post.uri}
+                            itemProp="url"
+                          >
+                            <span itemProp="title">{parse(title)}</span>
+                          </Link>
+                        </h2>
+                        <small>{post.date}</small>
+                      </header>
+                      <ButtonInline to={post.uri}>
+                        Read article &#8594;
+                      </ButtonInline>
+                    </Text>
+                  </Article>
+                </li>
               )
             })}
           </ol>

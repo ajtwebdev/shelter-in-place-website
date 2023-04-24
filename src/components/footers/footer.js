@@ -186,6 +186,27 @@ const StyledLink = styled(props => <Link {...props} />)`
   }
 `
 
+const Author = styled.div`
+  color: var(--txt-light-secondary);
+
+  div {
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+  }
+
+  a {
+    display: inline;
+    color: var(--txt-light-secondary);
+  }
+
+  .img {
+    width: 150px;
+  }
+`
+
 export default function Footer() {
   return (
     <FooterWrapper>
@@ -229,11 +250,11 @@ export default function Footer() {
                 <h4 className="subheader">contact us</h4>
                 <ul>
                   <li>
-                    <ContactLink href="tel: 403-000-0000">
+                    <ContactLink href="tel: 403-305-7758">
                       <div>
                         <FaPhone style={IconStyle} />
                       </div>
-                      403-000-0000
+                      403-305-7758
                     </ContactLink>
                   </li>
                   <li>
@@ -257,7 +278,7 @@ export default function Footer() {
         <hr />
         <PageLinks>
           <Flex>
-            <div>
+            <div className="center">
               <h3 className="subheader">Page Links</h3>
               <ul>
                 <li>
@@ -306,6 +327,21 @@ export default function Footer() {
             </li>
           </ul>
         </Copyright>
+        <hr />
+        <Author>
+          <Container>
+            <div>
+              <p>website by: </p>
+              <a target="_blank" href="https://www.aarontonner.com">
+                <StaticImage
+                  className="img"
+                  src="../../images/aaron-tonner-web-solutions-logo-white-white.svg"
+                  alt="aaron tonner web solutions logo"
+                />
+              </a>
+            </div>
+          </Container>
+        </Author>
       </Container>
     </FooterWrapper>
   )

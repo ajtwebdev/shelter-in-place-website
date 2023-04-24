@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 
 import BannerImg from "../images/christian-banner.jpg"
 import ImgRight from "../images/squirrel.jpg"
+import Curse from "../components/curse"
 
 export default function BecomeChristian() {
   return (
@@ -29,8 +30,9 @@ export default function BecomeChristian() {
         img={ImgRight}
         alt="become a christian"
         to="/contact"
-        button="talk to us"
+        button="talk to us today"
       />
+      <Curse />
       <FormContact title="Contact" />
     </Layout>
   )

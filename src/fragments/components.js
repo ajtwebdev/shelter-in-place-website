@@ -4,6 +4,13 @@
     export const componentFragments = graphql`
        
  
+      fragment Page_Acknowledgements on WpPage_Pagecomponents_PageComponents_Acknowledgements {
+        
+          title
+        
+      }
+     
+ 
       fragment Page_Badges on WpPage_Pagecomponents_PageComponents_Badges {
         
       title
@@ -26,6 +33,13 @@
           }
         }
       
+      }
+     
+ 
+      fragment Page_Beliefs on WpPage_Pagecomponents_PageComponents_Beliefs {
+        
+            title
+          
       }
      
  
@@ -175,6 +189,13 @@
     }
   }
     
+      }
+     
+ 
+      fragment Page_Curse on WpPage_Pagecomponents_PageComponents_Curse {
+        
+              title
+            
       }
      
  

@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Flex, Section } from "../layoutComponents"
+import { Container, Flex, Section } from "./layoutComponents"
 import styled from "styled-components"
 
 const Wrapper = styled.div`

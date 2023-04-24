@@ -259,11 +259,33 @@ export default function Footer() {
           <Flex>
             <div>
               <h3 className="subheader">Page Links</h3>
-              <ul></ul>
-            </div>
-            <div>
-              <h3 className="subheader">Blogs</h3>
-              <ul></ul>
+              <ul>
+                <li>
+                  <StyledLink to="/">Home</StyledLink>
+                </li>
+                <li>
+                  <StyledLink to="/about">About</StyledLink>
+                </li>
+                <li>
+                  <StyledLink to="/statement-of-faith">
+                    Statement of Faith
+                  </StyledLink>
+                </li>
+                <li>
+                  <StyledLink to="/gallery">Gallery</StyledLink>
+                </li>
+                <li>
+                  <StyledLink to="/blog">Blog</StyledLink>
+                </li>
+                <li>
+                  <StyledLink to="/contact">Contact</StyledLink>
+                </li>
+                <li>
+                  <StyledLink to="/become-a-christian">
+                    Become a Christian
+                  </StyledLink>
+                </li>
+              </ul>
             </div>
           </Flex>
         </PageLinks>

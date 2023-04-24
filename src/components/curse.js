@@ -3,7 +3,7 @@ import { Container, Flex, Section } from "./layoutComponents"
 import styled from "styled-components"
 
 const Wrapper = styled.div`
-  background: url("../images/hero-1.jpg");
+  background: url("../images/acknowledgements.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,8 +13,9 @@ const Wrapper = styled.div`
 const Item = styled.div`
   padding: 4em;
   background: rgba(255, 255, 255, 0.8);
+  text-align: center;
   p {
-    max-width: 70ch;
+    max-width: 100ch;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -30,15 +31,18 @@ export default function Curse() {
       <Section>
         <Container>
           <Item className="spacing">
-            <h2 className="title accent">we believe:</h2>
-            <p>
-              This discussion is meant for those who are truly seeking the
-              truth, who are ready to acknowledge that the universe around us is
-              infinite and inexplicable to us, who are ready to open themselves
-              to a God who created us, and who loves us. The authority from
-              which we speak is the Holy Bible (the Word of God). To go forward
-              there are a few premises that we must acknowledge:
-            </p>
+            <div>
+              <h2 className="title accent">we believe:</h2>
+              <p>
+                This discussion is meant for those who are truly seeking the
+                truth, who are ready to acknowledge that the universe around us
+                is infinite and inexplicable to us, who are ready to open
+                themselves to a God who created us, and who loves us. The
+                authority from which we speak is the Holy Bible (the Word of
+                God). To go forward there are a few premises that we must
+                acknowledge:
+              </p>
+            </div>
             <Flex>
               <div className="spacing">
                 <TextItem>
@@ -138,7 +142,7 @@ export default function Curse() {
               </p>
             </div>
             <div>
-              <h2 className="title">when you are saved</h2>
+              <h2 className="title accent">when you are saved</h2>
               <p>
                 When you have received the saving grace of the Lord Jesus, the
                 Holy Spirit dwells within you. Ephesians 1:13 And take the

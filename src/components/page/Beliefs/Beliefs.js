@@ -3,7 +3,7 @@ import { Container, Flex, Section } from "../../layoutComponents"
 import styled from "styled-components"
 
 const Wrapper = styled.div`
-  background: url("../../images/hero-1.jpg");
+  background: url("../../images/acknowledgements.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@ export default function Beliefs() {
       <Section>
         <Container>
           <Item className="spacing">
-            <h2 className="title accent">we believe:</h2>
+            <h2 className="title accent center">we believe:</h2>
             <Flex>
               <div className="spacing">
                 <TextItem>

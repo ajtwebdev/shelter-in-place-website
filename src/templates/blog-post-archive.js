@@ -72,7 +72,7 @@ const BannerWrapper = styled.div`
   grid-row: 1 / span 2;
   grid-column: 1 / -1;
   z-index: 1;
-  background: url("../../images/blog-banner-shelter.jpg"), rgba(0, 0, 0, 0.7);
+  background: url("../../images/acknowledgements.jpg"), rgba(0, 0, 0, 0.7);
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;

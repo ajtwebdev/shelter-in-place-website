@@ -73,6 +73,7 @@ export default function RecentPostsSigns() {
     ],
   }
   const data = useRecentPostsSigns()
+  console.log(data.wpCategory.posts.nodes)
   return (
     <Section>
       <Container className="spacing">

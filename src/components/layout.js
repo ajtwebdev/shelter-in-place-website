@@ -15,7 +15,7 @@ import RecentPostsWord from "./recentPostsWord"
 export default function Layout({ children }) {
   return (
     <>
-      <SEO />
+      <SEO title="Shelter in Place" />
       <HeaderBasic />
       <main>{children}</main>
       <RecentPostsSigns />

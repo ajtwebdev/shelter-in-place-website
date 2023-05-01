@@ -22,7 +22,7 @@ const PageTemplate = pageProps => {
   return (
     <>
       <Layout>
-        <SEO title="title" description="description" />
+        <SEO title="Shelter in Place" description="This Site Is Meant To Encourage Believers In God’s Word, And To Persuade Seekers Of The Truth To Explore The Pages Of The Word. Signs Of The Times Focuses On The World We Live In, The Evil That Is Afoot, The Deceptions That Go Unnoticed By Most, The Contending Spiritual Battles That Are Emerging, Also Unnoticed By Most, All In Light Of Biblical Prophecy. The Word Is A Tribute To The Word Of God, Jesus Christ, Yeshua Hamashiach – The Richness And The Sheer Wonder Of Our Holy God His Word To Us In Parables, Illustrations, Exhortations, And The Living Word." />
         {components.map((component, index) => {
           // ### COMPONENT RENDERING ### DO NOT MODIFY OR MOVE THIS COMMENT ###
           return <div>Error: The component {component.name} was not found</div>

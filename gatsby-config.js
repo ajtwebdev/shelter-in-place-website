@@ -67,7 +67,7 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: "http://www.shelter-staging.purpleparrotwebsites.com/graphql",
+        url: "http://www.wp-content.shelterinplace3.ca/graphql",
       },
     },
   ],

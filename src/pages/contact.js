@@ -18,7 +18,7 @@ export default function Contact() {
         img={BannerImg}
         title="contact us here"
         subheader="shelter in place"
-        description="Have questions about becoming a Christian? Feel free to use the contact form below."
+        description="Have questions about becoming a Christian? Or questions or comments about anything? Please share them in the form below."
       />
       <FormContact title="Contact" />
     </Layout>

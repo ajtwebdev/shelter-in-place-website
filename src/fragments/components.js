@@ -63,6 +63,22 @@
       }
      
  
+      fragment Page_Bio on WpPage_Pagecomponents_PageComponents_Bio {
+        
+            title
+            description
+            image {
+                altText
+                localFile {
+                    childImageSharp {
+                        gatsbyImageData
+                    }
+                }
+            }
+          
+      }
+     
+ 
       fragment Page_Carousel on WpPage_Pagecomponents_PageComponents_Carousel {
         
     subheader

@@ -170,28 +170,28 @@ const GetQuote = styled(props => <Link {...props} />)`
 
 const Dropdown = styled.li`
   /* hover display only on desktop */
-
   @media screen and (min-width: ${device.md}) {
-    div {
-      display: ${({ dropdown }) => (dropdown ? "flex" : "none")};
-      position: absolute;
-      top: 155px;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-      opacity: 1;
-    }
     ul {
-      width: 100%;
+      position: absolute;
+      z-index: 1000;
+      display: none;
+      opacity: 1;
       margin: 0;
-      padding: 2em 2em 2em 4em;
+      padding: 2em 2em 2em 1em;
       list-style-type: none;
-      background: var(--clr-light);
+      background: var(--clr-dark);
 
       li {
         a {
-          color: var(--txt-dark);
+          color: var(--txt-light);
         }
+      }
+    }
+
+    &:hover {
+      ul {
+        display: flex;
+        flex-direction: column;
       }
     }
   }
@@ -269,14 +269,14 @@ export default function HeaderBasic() {
       <Headertop>
         <Container className="container">
           <ul>
-            <li>
+            {/* <li>
               <NavLinkTop href="tel: 403-305-7758">
                 <div>
                   <FaPhone />
                 </div>
                 403-305-7758
               </NavLinkTop>
-            </li>
+            </li> */}
             <li>
               <NavLinkTop href="mailto: info@shelterinplace.us">
                 <div>
@@ -326,10 +326,24 @@ export default function HeaderBasic() {
               <li>
                 <StyledLink to="/gallery">gallery</StyledLink>
               </li>
-              <li>
-                <StyledLink to="/blog">blog</StyledLink>
-              </li>
-
+              <Dropdown>
+                  <StyledLink to="/blog">
+                    blog
+                    <IoMdArrowDropdown size={20} />
+                  </StyledLink>
+                  <ul>
+                    <li>
+                      <StyledLink to="/signs-of-the-times">
+                        signs of the times
+                      </StyledLink>
+                    </li>
+                    <li>
+                      <StyledLink to="/the-word">
+                        the word
+                      </StyledLink>
+                    </li>
+                  </ul>
+                </Dropdown>
               <li>
                 <StyledLink to="/contact">contact</StyledLink>
               </li>

@@ -28,17 +28,22 @@ export default function Acknowledgements() {
           <Item className="spacing">
             <h2 className="title accent">special acknowledgments</h2>
             <ul>
-              <li className="bold">
-                John Macarthur - Books and Grace to you Ministry
-              </li>
-              <li className="bold">Thomas Ice - Books debates videos</li>
-              <li className="bold">John Valvoord - Pre-trib Books</li>
-              <li className="bold">
+            <li className="bold">Brandon Holthaus - Rock Harbor Church</li>
+            <li className="bold">David Jeremiah - Turning Point Ministry</li>
+            <li className="bold">Henry Morris - Books (Creation)</li>
+            <li className="bold">John Valvoord - Pre-trib Books</li>
+            <li className="bold">
                 J Vernon McGee - Books, Thru the Bible Ministry
               </li>
-              <li className="bold">David Jeremiah - Turning Point Ministry</li>
-              <li className="bold">Henry Morris - Books (Creation)</li>
-              <li className="bold">Brandon Holthaus - Rock Harbor Church</li>
+              <li className="bold">
+              Dr Rob Linsdsted – Truth in Bible Prophecy
+              </li>
+              <li className="bold">Thomas Ice - Books debates videos</li>
+              
+              
+              
+              
+              
             </ul>
           </Item>
         </Container>

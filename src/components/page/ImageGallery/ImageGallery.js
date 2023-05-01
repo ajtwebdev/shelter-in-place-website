@@ -41,11 +41,11 @@ export default function ImageGallery({ subheader, title, body, imageGallery }) {
               <p className="subheader accent">{subheader}</p>
               <h2 className="title">{title}</h2>
             </div>
-            <p
+            {/* <p
               dangerouslySetInnerHTML={{
                 __html: `${body}`,
               }}
-            />
+            /> */}
           </Text>
           <Grid>
             {imageGallery.map(image => {

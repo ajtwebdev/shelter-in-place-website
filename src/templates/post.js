@@ -178,7 +178,7 @@ const NewsTemplate = pageProps => {
         <Container className="spacing">
           <Wrapper>
             <Aside className="spacing">
-              <Navigation className="spacing">
+              {/* <Navigation className="spacing">
                 <h3 className="caps accent title bold">
                   The <br /> Author
                 </h3>
@@ -204,7 +204,7 @@ const NewsTemplate = pageProps => {
                   attention span to read the printed word let alone read a book
                   of any kind.
                 </p>
-              </Navigation>
+              </Navigation> */}
               <div className="service-form">
                 <ServiceForm />
               </div>

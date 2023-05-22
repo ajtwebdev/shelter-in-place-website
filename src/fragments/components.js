@@ -344,6 +344,14 @@
       }
      
  
+      fragment Page_Seo on WpPage_Pagecomponents_PageComponents_Seo {
+        
+      title
+      description
+      
+      }
+     
+ 
       fragment Page_TabsSide on WpPage_Pagecomponents_PageComponents_TabsSide {
         
     title

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql } from "gatsby"
 import { combineFields } from "../utils/combine-fields"
 import Layout from "../components/layout"
@@ -14,6 +14,7 @@ import {
 } from "../components/buttons"
 import ServiceForm from "../components/forms/serviceForm"
 import { StaticImage } from "gatsby-plugin-image"
+import commentBox from "commentbox.io"
 
 const BlogArticle = styled.article`
   h1,
@@ -145,6 +146,10 @@ const ServiceAreas = styled.div`
 
 const NewsTemplate = pageProps => {
   const data = combineFields(pageProps.data.wpPost, "post")
+  useEffect(() => {
+    commentBox("5734406165626880-proj")
+  }, [])
+
   return (
     <Layout>
       {/* <Banner {...data} /> */}
@@ -252,6 +257,7 @@ const NewsTemplate = pageProps => {
               </ServiceAreas> */}
             </Content>
           </Wrapper>
+          <div className="commentbox" />
         </Container>
       </Section>
     </Layout>

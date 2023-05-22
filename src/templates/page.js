@@ -5,12 +5,10 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../../src/components/layout"
 import SEO from "../../src/components/seo"
-// import { useSeoQuery } from "../hooks/useSeoQuery"
 
 // ### COMPONENT IMPORTS ### DO NOT MODIFY OR MOVE THIS COMMENT ###
 
 const PageTemplate = pageProps => {
-  // const seoData = useSeoQuery()
   let components
   // ### COMPONENTS VARIABLE ### DO NOT MODIFY OR MOVE THIS COMMENT ###
   components = components.map(component => {
@@ -36,11 +34,3 @@ export default PageTemplate
 
 // ### PAGE QUERY ### DO NOT MODIFY OR MOVE THIS COMMENT ###
 
-// the below gave errors
-// export const query = graphql`
-//   query PageQuery($id: String!) {
-//     wpPage(id: { eq: $id }) {
-//       title
-//     }
-//   }
-// `

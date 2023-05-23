@@ -255,9 +255,9 @@ const NewsTemplate = pageProps => {
                   </ButtonInline>
                 </p>
               </ServiceAreas> */}
+              <div className="commentbox" />
             </Content>
           </Wrapper>
-          <div className="commentbox" />
         </Container>
       </Section>
     </Layout>

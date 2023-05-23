@@ -15,7 +15,7 @@ export default function BecomeChristian() {
     <Layout>
       <SEO
         title="Become a Christian - Shelter in Place"
-        description="You can contact us on this page using the form if you are interested in become a Christian."
+        description="You can contact us on this page using the form if you are interested in becoming a Christian."
       />
       <Banner
         img={BannerImg}

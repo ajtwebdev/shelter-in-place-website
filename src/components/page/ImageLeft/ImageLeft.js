@@ -8,6 +8,7 @@ const Text = styled.div``
 
 const StyledImg = styled(GatsbyImage)`
   box-shadow: -10px 10px 0px 1px var(--clr-accent);
+  max-height: 600px;
 `
 
 export default function ImageLeft({ subheader, title, body, image }) {

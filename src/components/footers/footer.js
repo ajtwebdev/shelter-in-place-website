@@ -249,14 +249,6 @@ export default function Footer() {
               <div className="spacing">
                 <h4 className="subheader">contact us</h4>
                 <ul>
-                  {/* <li>
-                    <ContactLink href="tel: 403-305-7758">
-                      <div>
-                        <FaPhone style={IconStyle} />
-                      </div>
-                      403-305-7758
-                    </ContactLink>
-                  </li> */}
                   <li>
                     <ContactLink href="mailto: info@shelterinplace.ca">
                       <div>
